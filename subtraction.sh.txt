@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "*** subtraction in static ***"
+a=10
+b=10
+c=$((a-b))
+echo "subtraction of $a and $b : $c"
+
+echo "------------------------------"
+
+echo "*** subtraction in dynamic ***"
+echo "enter value of d"
+read d
+echo "enter value of e"
+read e
+f=$((d-e))
+echo "subtraction of $d and $e : $f"
