@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "*** addition in static ***"
+add(){
+a=10
+b=10
+c=$((a+b))
+echo "addition of $a and $b : $c"
+}
+add
+
+echo "---------------------------"
+
+echo "*** addition in dynamic ***"
+
+echo "enter value of d"
+read d
+echo "enter value of e"
+read e
+add(){
+f=$((d+e))
+echo "addition of $d and $e : $f"
+}
+add
