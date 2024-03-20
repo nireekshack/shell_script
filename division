@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "*** division in static ***"
+div(){
+c=$(($1/$2))
+echo "division of $1 and $2 : $c"
+}
+div 10 5
+
+echo "---------------------------"
+
+echo "*** division in dynamic ***"
+echo "enter value of d"
+read d
+echo "enter value of e"
+read e
+div(){
+f=$(($1/$2))
+echo "division of $1 and $1 : $f"
+}
+div $d $e
+
+
