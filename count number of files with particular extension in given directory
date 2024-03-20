@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "enter the extension"
+read exn
+count=0
+for i in ./files/*.$exn
+do
+        ((count++))
+done
+echo "the number of .$exn files count: $count"
