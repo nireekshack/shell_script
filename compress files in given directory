@@ -1,0 +1,19 @@
+#!/bin/bash
+  
+echo "-------- using tar ----------"
+for i in ./<directory_name>/*
+do
+  tar -cvf compress.tar $i
+done
+
+echo "-------- using zip -----------"
+for i in ./<directory_name>/*
+do
+  zip $i
+done
+
+echo "-------- using gzip ----------"
+for i in ./js/*
+do
+  gzip $i
+done
