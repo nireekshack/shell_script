@@ -1,0 +1,7 @@
+#!/bin/bash
+count=0
+for i in ./<directory_name>/*
+do
+     ((count++))
+done
+echo "the count of files : $count"
