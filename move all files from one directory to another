@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in ./<directory_name>/*
+do
+   mv $i ./<directory_name>
+done
